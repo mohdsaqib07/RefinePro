@@ -1,0 +1,5 @@
+{% extends "layout.html" %}
+{% block title %} This is rendered by html docuement {% endblock %}
+{% block main %}
+<h1 style="color:red;text-align:center;margin-top:25vh;text-shadow:1px 2px 3px #ccc">This is the about page of {{ name|title }}</h1>
+{% endblock %}

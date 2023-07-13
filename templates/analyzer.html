@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %} Text Analyzer {% endblock %}
+{% block main %}
+ <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcom to <a href="#">RefinePro.in!</a></strong> Suceess Your text has been analyzer.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+    <div class="container my-3 border border-dark">
+    <h1 style="text-align:center">Analyzer Purpose : {{ purpose }}</h1>
+    <p>
+      <pre>{{ analyzetext }}</pre>
+    </p>
+        </div>
+<style>
+    body{
+
+   background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    </style>
+
+
+{% endblock %}
